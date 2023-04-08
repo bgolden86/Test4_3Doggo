@@ -1,0 +1,55 @@
+﻿@model List<Test4_3.Models.DogViewModel>
+
+
+@{
+}
+
+
+
+<h3>Customer Data</h3>
+<hr />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                Dog Name
+            </th>
+            <th>
+                Age
+            </th>
+            <th>
+                Breed
+            </th>
+            <th>
+                Customer Name
+            </th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zipcode</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dog in Model)
+        {
+            <tr>
+
+                <td>
+                    @dog.DogName
+                </td>
+                <td>@dog.Age</td>
+                <td>@dog.Breed </td>
+                <td>@dog.CustomerName </td>
+                <td>@dog.Email </td>
+                <td>@dog.Phone </td>
+                <td>@dog.Address </td>
+                <td>@dog.City </td>
+                <td>@dog.State </td>
+                <td>@dog.Zipcode</td>
+            </tr>
+        }
+    </tbody>
+</table>
