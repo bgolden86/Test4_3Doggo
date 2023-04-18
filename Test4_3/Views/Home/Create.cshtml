@@ -6,66 +6,24 @@
 @{
 }
 
+<body class="img" style="background-image: src(); background-size: cover;">
+<form asp-controller="Home" asp-action="CreateDog" method="post">
 
-<<div class="row">
-    <div class="col-12">
-        <div class="card">
-            <div class="card-header">
-                <h5>Application For Dog Walking</h5>
 
-            </div>
-            <div class="card-body">
-                <form asp-controller="Home" asp-action="CreateDog" method="post">
-                    <div class="mb-3">
-                        <label class="form-label">Dog Name</label>
-                        <input asp-for=DogName type="text" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Dog Age</label>
-                        <input asp-for=Age type="number" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Dog Breed</label>
-                        <input asp-for=Breed type="text" class="form-control">
+    <div class="container">
+        <div class="">
+        <div class="row">
+        <div class="col-12">
+            <div class="mb-3">
+               <label class="form-label">Dog Name</label>
+                   <input asp-for=DogName type="text" class="form-control">
                     </div>
 
-                    <h3>Pet Parent Information</h3>
+        </div>   
 
-                    <div class="mb-3">
-                        <label class="form-label">First & Last Name</label>
-                        <input asp-for=CustomerName type="text" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Phone</label>
-                        <input asp-for=Phone type="number" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Email</label>
-                        <input asp-for=Email type="email" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Address</label>
-                        <input asp-for=Address type="text" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Zipcode</label>
-                        <input asp-for=Zipcode type="number" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">City</label>
-                        <input asp-for=City type="text" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">State</label>
-                        <input asp-for=State type="text" class="form-control">
-                    </div>
-                    <div>
-                        <button type="submit" class="btn-primary">submit</button>
-                    </div>
-                </form>
-            </div>
-            <div class="card-footer">
-            </div>
+
         </div>
     </div>
-</div>
+    </div>
+  </form>
+  </body>
